@@ -1,0 +1,24 @@
+Livreur:
+    type: entity
+    table: livreur
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        region:
+            type: string
+            nullable: true
+            length: 45
+            fixed: false
+            comment: ''
+        etat:
+            type: boolean
+            nullable: true
+            comment: ''
+    lifecycleCallbacks: {  }

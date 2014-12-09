@@ -1,0 +1,51 @@
+LignePanier:
+    type: entity
+    table: ligne_panier
+    indexes:
+        fk_panier_has_produit_produit1_idx:
+            columns:
+                - produit_idproduit
+        fk_panier_has_produit_panier1_idx:
+            columns:
+                - panier_idpanier
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        quantitee:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+        montant:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            comment: ''
+    manyToOne:
+        panierpanier:
+            targetEntity: Panier
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                panier_idpanier:
+                    referencedColumnName: idpanier
+            orphanRemoval: false
+        produitproduit:
+            targetEntity: Produit
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                produit_idproduit:
+                    referencedColumnName: idproduit
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

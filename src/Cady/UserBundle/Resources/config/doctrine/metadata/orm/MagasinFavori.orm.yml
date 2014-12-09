@@ -1,0 +1,39 @@
+MagasinFavori:
+    type: entity
+    table: magasin_favori
+    indexes:
+        fk_magasin_favori_client1_idx:
+            columns:
+                - client_idclient
+        fk_magasin_favori_magasin1_idx:
+            columns:
+                - magasin_idmagasin
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    manyToOne:
+        clientclient:
+            targetEntity: Client
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                client_idclient:
+                    referencedColumnName: idclient
+            orphanRemoval: false
+        magasinmagasin:
+            targetEntity: Magasin
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                magasin_idmagasin:
+                    referencedColumnName: idmagasin
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

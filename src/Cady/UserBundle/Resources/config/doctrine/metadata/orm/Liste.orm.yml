@@ -1,0 +1,39 @@
+Liste:
+    type: entity
+    table: liste
+    indexes:
+        fk_liste_client1_idx:
+            columns:
+                - client_idclient
+        fk_liste_produit1_idx:
+            columns:
+                - produit_idproduit
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    manyToOne:
+        clientclient:
+            targetEntity: Client
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                client_idclient:
+                    referencedColumnName: idclient
+            orphanRemoval: false
+        produitproduit:
+            targetEntity: Produit
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                produit_idproduit:
+                    referencedColumnName: idproduit
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

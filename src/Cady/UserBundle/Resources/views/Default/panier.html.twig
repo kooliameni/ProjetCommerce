@@ -1,0 +1,209 @@
+{% extends 'CadyUserBundle::Default/layout.html.twig' %}
+{% block header %}{{parent()}}{% endblock %}
+{% block body %} 
+    
+		<div class="breadcrumbs">
+			<div class="container main">
+				<ul>
+					<li><a href="#">Page d'accueil</a></li><li>/</li><li class="active"><a href="#">Panier</a></li>
+				</ul>
+			</div>	
+		</div>
+
+		<div class="main_content">
+			<div class="container main">
+				<div class="checkout_area">
+					<h2 class="title-wrap">
+						PAnier
+					</h2>
+					<div class="line"></div>
+					
+						<div class="cart_area">
+							
+							<div class="cart_area_heading">
+								<div class="row">
+								<div class="span3 cart_remove">
+									<p>Supprimer</p>
+								</div>
+								<div class="span2 cart_image">
+									<p>Image</p>
+								</div>
+								<div class="span2 cart_product_name">
+									<p> Nom de Produit</p>
+								</div>
+								<div class="span2 cart_quantity">
+									<p>Quantité</p>
+								</div>
+								<div class="span3 cart_total_price">
+									<p>Prix Total</p>
+								</div>
+								</div>
+							</div>
+							<div class="cart_area_list">
+								<div class="cart_area_content">
+								<div class="row">
+									<div class="span3 cart_remove">
+										<p><input name="product1" value="product1" type="checkbox"></p>
+									</div>
+									<div class="span2 cart_image">
+										<img alt="" src="cart_files/1_002.png">
+									</div>
+									<div class="span2 cart_product_name">
+										<p>Mordern Dress</p>
+									</div>
+									<div class="span2 cart_quantity">
+										<p>
+											<select>
+												<option selected="selected" value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+											</select>
+										</p>
+									</div>
+									<div class="span3 cart_total_price">
+										<p>$500</p>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="cart_area_list">
+							<div class="cart_area_content">
+							<div class="row">
+								<div class="span3 cart_remove">
+									<p><input name="product1" value="product1" type="checkbox"></p>
+								</div>
+								<div class="span2 cart_image">
+									<img alt="" src="cart_files/2_002.png">
+								</div>
+								<div class="span2 cart_product_name">
+									<p>Mordern Dress</p>
+								</div>
+								<div class="span2 cart_quantity">
+									<p>
+										<select>
+											<option selected="selected" value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+										</select>
+									</p>
+								</div>
+								<div class="span3 cart_total_price">
+									<p>$500</p>
+								</div>
+							</div>
+						</div>						
+						</div>						
+						</div>
+					</div>
+					<div class="checkout_area cart_area_accordion">
+						<div role="tablist" class="ui-accordion ui-widget ui-helper-reset" id="accordion">
+							<div tabindex="0" aria-selected="false" aria-controls="ui-accordion-accordion-panel-0" id="ui-accordion-accordion-header-0" role="tab" class="row ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+								<h3>Estimate &amp; Shipping Tax</h3>
+							</div>
+							<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion-header-0" id="ui-accordion-accordion-panel-0" style="display: none;" class="row ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+								<div class="checkout_info delivery_details">
+									<h2>Account &amp; Billing Details</h2>
+									<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum
+ sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris 
+turpis porttitor velit, faucibus interdum tellus libero ac justo. 
+Vivamus non quam. In suscipit faucibus urna. </p>
+									<form>
+									
+											<label><small>Cart Subtotal:</small></label>
+											<p><b>$1170.00</b></p>
+											<label><small>Shipping:</small></label>
+											<p><b>$0.00 (Shipping Free)</b></p>
+											<label><small>Order Total:</small></label>
+											<p><b>$1170.00</b></p>
+									
+									</form>
+									<button class="confirm_btn">Confirm</button>
+								</div>
+							</div>
+							<div tabindex="-1" aria-selected="false" aria-controls="ui-accordion-accordion-panel-1" id="ui-accordion-accordion-header-1" role="tab" class="row ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+								<h3>Apply Discount Code</h3>
+							</div>	
+							<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion-header-1" id="ui-accordion-accordion-panel-1" style="display: none;" class="checkout_info delivery_details cuppon_arena ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+								<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum 
+sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris 
+turpis porttitor velit, faucibus interdum tellus libero ac justo. 
+Vivamus non quam. In suscipit faucibus urna. </p>
+								<input id="cupon" placeholder="Discaount Code" type="text">
+								<button class="confirm_btn">Confirm</button>
+							</div>
+							<div tabindex="-1" aria-selected="false" aria-controls="ui-accordion-accordion-panel-2" id="ui-accordion-accordion-header-2" role="tab" class="row ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+								<h3>Use Gift Voucher</h3>
+							</div>
+							<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion-header-2" id="ui-accordion-accordion-panel-2" style="display: none;" class="row ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+								<div class="checkout_info delivery_details">
+									<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum
+ sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris 
+turpis porttitor velit, faucibus interdum tellus libero ac justo. 
+Vivamus non quam. In suscipit faucibus urna. </p>
+									<p>Curabitur non nulla sit amet nisl tempus convallis quis ac 
+lectus. Donec sollicitudin molestie malesuada. Nulla quis lorem ut 
+libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta. 
+Nulla porttitor accumsan tincidunt. Vivamus magna justo, lacinia eget 
+consectetur sed, convallis at tellus. Proin eget tortor risus. 
+Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero 
+malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum 
+sed sit amet dui.</p>
+									<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum
+ sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris 
+turpis porttitor velit, faucibus interdum tellus libero ac justo. 
+Vivamus non quam. In suscipit faucibus urna. </p>
+								</div>
+							</div>
+						</div>
+						<script type="text/javascript">
+						  $(function() {
+							$( "#accordion" ).accordion({
+							  collapsible: true,
+							  autoHeight:false,
+							});
+						  });
+						</script>					
+					</div>
+					<div class="row total_cost">
+						<div class="span6 gap_section">
+
+						</div>
+						<div class="span6 total_cost_section">
+							<div class="total_cart_cost">
+								<div class="cart_level">
+									<p>sub-total:</p>
+									<p>Eco-tax(-2.00)</p>
+									<p>Vat (10.0%):</p>
+									<p><span>total:</span></p>
+								</div>
+								<div class="cart_amount">
+									<p>$1170.00</p>
+									<p class="tax">$2.00</p>
+									<p class="vat">$117.00</p>
+									<p><span>$1053.00</span></p>
+								</div>
+							</div>
+							<div class="total_cart_cost_btn">
+								<button class="checkout">checkout</button>
+								<button class="continue">continue</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+{% endblock %}
+{% block footer %}{{parent()}}{% endblock %} 
+

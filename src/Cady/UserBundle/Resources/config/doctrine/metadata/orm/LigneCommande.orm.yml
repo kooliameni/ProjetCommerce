@@ -1,0 +1,45 @@
+LigneCommande:
+    type: entity
+    table: ligne_commande
+    indexes:
+        fk_produit_has_commande_commande1_idx:
+            columns:
+                - commande_idcommande
+        fk_produit_has_commande_produit1_idx:
+            columns:
+                - produit_idproduit
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        quantitee:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+    manyToOne:
+        commandecommande:
+            targetEntity: Commande
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                commande_idcommande:
+                    referencedColumnName: idcommande
+            orphanRemoval: false
+        produitproduit:
+            targetEntity: Produit
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                produit_idproduit:
+                    referencedColumnName: idproduit
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

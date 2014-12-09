@@ -1,0 +1,306 @@
+{% extends 'CadyUserBundle::Default/layout.html.twig' %}
+{% block header %}{{parent()}}{% endblock %}
+{% block body %}
+   <div class="breadcrumbs">
+			<div class="container main">
+				<ul>
+					<li><a href="#">PAge d'accueil</a></li><li>/</li><li class="active"><a href="#">Commander</a></li>
+				</ul>
+			</div>	
+		</div>	
+
+		<div class="main_content">
+			<div class="container main">
+			<div class="row">
+				<div class="span9 checkout_area">
+					<h2 class="title-wrap">
+						Checkout Informaiton
+					</h2>
+					<div class="line"></div>
+						<div role="tablist" class="ui-accordion ui-widget ui-helper-reset" id="accordion">
+							<h3 tabindex="0" aria-selected="false" aria-controls="ui-accordion-accordion-panel-0" id="ui-accordion-accordion-header-0" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Step 1: <span>Checkout Information</span></h3>
+							<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion-header-0" id="ui-accordion-accordion-panel-0" style="display: none;" class="row ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+							<div class="checkout_info">
+								<div class="span4 new_customer">
+									<h2>New Customer</h2>
+									<div class="customer_select">
+										<p>Mauris mauris ante</p>
+										<form>
+											<input name="account" value="register" type="radio"><div class="account_name">Register</div>
+											<input name="account" value="guest" type="radio"><div class="account_name">Guest</div>
+										</form>
+									</div>	
+									<p>Mauris dapibus quam id turpis dignissim rutrum. Phasellus placerat nunc.</p>
+									<button class="register">Continue</button>
+								</div>
+								<div class="span4 returning_customer">
+									<h2>Returning Customer</h2>
+									<div class="customer_select">
+										<p>I'm a returning customer</p>
+										<form>
+											<p>
+												<label><small>Email<strong>*</strong></small></label>
+												<input name="email" class="width" size="42" tabindex="1" type="text">
+											</p>
+
+											<p>
+												<label><small>Password<strong>*</strong></small></label>
+												<input name="password" class="width" size="42" tabindex="2" type="text">
+											</p>
+										</form>
+									</div>	
+									<p class="forgot_pass">Forgot your password</p>
+									<button class="register">Login</button>
+								</div>
+							</div>
+							</div>
+							<h3 tabindex="-1" aria-selected="false" aria-controls="ui-accordion-accordion-panel-1" id="ui-accordion-accordion-header-1" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Step 2: <span>Billing Information</span></h3>
+							<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion-header-1" id="ui-accordion-accordion-panel-1" style="display: none;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+								<div class="delivery_details">
+									<h2>Billing Details</h2>
+									<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum
+ sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris 
+turpis porttitor velit, faucibus interdum tellus libero ac justo. 
+Vivamus non quam. In suscipit faucibus urna. </p>
+									<form>
+										
+											<label><small>Name<strong>*</strong></small></label>
+											<input name="name" class="width" size="42" tabindex="1" type="text">
+										
+										
+										
+											<label><small>Last Name<strong>*</strong></small></label>
+											<input name="lastname" class="width" size="42" tabindex="2" type="text">
+										
+										
+										
+											<label><small>Address Line 1<strong>*</strong></small></label>
+											<input name="address" class="width" size="42" tabindex="1" type="text">
+										
+											<label><small>Address Line 2<strong>*</strong></small></label>
+											<input name="address" class="width" size="42" tabindex="1" type="text">
+									
+										
+									
+										
+											<label><small>Cell Phone No<strong>*</strong></small></label>
+											<input name="cellphone" class="width" size="42" tabindex="1" type="text">
+										
+										
+											<label><small>State<strong>*</strong></small></label>
+											<input name="state" class="width" size="42" tabindex="2" type="text">
+										
+										
+											<label><small>City<strong>*</strong></small></label>
+											<input name="city" class="width" size="42" tabindex="1" type="text">
+										
+											<label><small>Country<strong>*</strong></small></label>
+											<input name="country" class="width" size="42" tabindex="2" type="text">
+										
+									</form>
+									<button class="confirm_btn">Confirm</button>
+								</div>	
+							</div>
+							<h3 tabindex="-1" aria-selected="false" aria-controls="ui-accordion-accordion-panel-2" id="ui-accordion-accordion-header-2" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Step 3: <span>Delivery Details</span></h3>
+							<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion-header-2" id="ui-accordion-accordion-panel-2" style="display: none;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+								<div class="delivery_details">
+									<h2>Delivery Details</h2>
+									<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum
+ sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris 
+turpis porttitor velit, faucibus interdum tellus libero ac justo. 
+Vivamus non quam. In suscipit faucibus urna. </p>
+									<form>
+										
+											<label><small>Name<strong>*</strong></small></label>
+											<input name="name" class="width" size="42" tabindex="1" type="text">
+										
+										
+											<label><small>Last Name<strong>*</strong></small></label>
+											<input name="lastname" class="width" size="42" tabindex="2" type="text">
+										
+										
+											<label><small>Address Line 1<strong>*</strong></small></label>
+											<input name="address" class="width" size="42" tabindex="1" type="text">
+											
+											<label><small>Address Line 2<strong>*</strong></small></label>
+											<input name="address" class="width" size="42" tabindex="1" type="text">
+										
+										
+											<label><small>Cell Phone No<strong>*</strong></small></label>
+											<input name="cellphone" class="width" size="42" tabindex="1" type="text">
+										
+										
+											<label><small>State<strong>*</strong></small></label>
+											<input name="state" class="width" size="42" tabindex="2" type="text">
+										
+										
+											<label><small>City<strong>*</strong></small></label>
+											<input name="city" class="width" size="42" tabindex="1" type="text">
+										
+											<label><small>Country<strong>*</strong></small></label>
+											<input name="country" class="width" size="42" tabindex="2" type="text">
+										
+									</form>
+									<button class="confirm_btn">Confirm</button>
+								</div>
+							</div>
+							<h3 tabindex="-1" aria-selected="false" aria-controls="ui-accordion-accordion-panel-3" id="ui-accordion-accordion-header-3" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Step 4: <span>Payment Methods</span></h3>
+							<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion-header-3" id="ui-accordion-accordion-panel-3" style="display: none;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+								<div class="delivery_details">
+									<form>
+										<h2>Direct Bank Transfer</h2>
+										<p>Sed non urna. Donec et ante. Phasellus eu ligula. 
+Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, 
+mauris turpis porttitor velit.</p>
+										<input name="payment" value="direct_bank" type="radio"><div class="account_name">Direct Bank Transfer</div>
+										<h2>Cheque Payment</h2>
+										<p>Sed non urna. Donec et ante. Phasellus eu ligula. 
+Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, 
+mauris turpis porttitor velit.</p>
+										<input name="payment" value="cheque" type="radio"><div class="account_name">Cheque Payment</div>
+										<h2>Cash on Delivery</h2>
+										<p>Sed non urna. Donec et ante. Phasellus eu ligula. 
+Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, 
+mauris turpis porttitor velit.</p>
+										<input name="payment" value="cash" type="radio"><div class="account_name">Cash on Delivery</div>
+										<h2>PayPal</h2>
+										<p>Sed non urna. Donec et ante. Phasellus eu ligula. 
+Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, 
+mauris turpis porttitor velit.</p>
+										<input name="payment" value="paypal" type="radio"><div class="account_name">PayPal</div>
+										<h2>Moneybookers</h2>
+										<p>Sed non urna. Donec et ante. Phasellus eu ligula. 
+Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, 
+mauris turpis porttitor velit.</p>
+										<input name="payment" value="moneybookers" type="radio"><div class="account_name">Moneybookers</div>		
+									</form>
+									<button class="confirm_btn">Confirm</button>
+								</div>	
+							</div>
+							<h3 tabindex="-1" aria-selected="false" aria-controls="ui-accordion-accordion-panel-4" id="ui-accordion-accordion-header-4" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Step 5: <span>Confirm Orders</span></h3>
+							<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion-header-4" id="ui-accordion-accordion-panel-4" style="display: none;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+								<div class="delivery_details confirm_details">
+									<input name="payment" value="moneybookers" type="checkbox"><div class="account_name"><p>Sed
+ non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet 
+purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis 
+porttitor velit.</p></div>
+									<button class="confirm_btn">Confirm</button>
+								</div>
+							</div>
+							<h3 tabindex="-1" aria-selected="false" aria-controls="ui-accordion-accordion-panel-5" id="ui-accordion-accordion-header-5" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Step 6: <span>Account &amp; Billing Details</span></h3>
+							<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion-header-5" id="ui-accordion-accordion-panel-5" style="display: none;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+								<div class="delivery_details">
+								<h2>Account &amp; Billing Details</h2>
+									<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum
+ sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris 
+turpis porttitor velit, faucibus interdum tellus libero ac justo. 
+Vivamus non quam. In suscipit faucibus urna. </p>
+									<div class="row total_cost">
+										<div class="span6 total_cost_section">
+											<div class="total_cart_cost">
+												<div class="cart_level">
+													<p>sub-total:</p>
+													<p>Eco-tax(-2.00)</p>
+													<p>Vat (10.0%):</p>
+													<p><span>total:</span></p>
+												</div>
+												<div class="cart_amount">
+													<p>$1170.00</p>
+													<p class="tax">$2.00</p>
+													<p class="vat">$117.00</p>
+													<p><span>$1053.00</span></p>
+												</div>
+											</div>
+											<div class="total_cart_cost_btn">
+												<button class="checkout">checkout</button>
+												<button class="continue">continue</button>
+											</div>
+										</div>
+									</div>
+							
+									</div>
+							</div>
+						</div>	
+
+				</div>
+				<div class="span3 widget-area">
+					<div class="right-sidebar">
+						<div class="widget-info">
+							<div class="widget-title">Categories</div>
+							<div class="line"></div>
+							<div class="widget-content">
+								<ul>
+									<li><a href="#">Dresses</a></li>
+									<li><a href="#">Bags &amp; Purses</a></li>
+									<li><a href="#">Coats &amp; Jackets</a></li>
+									<li><a href="#">Accessories</a></li>
+									<li><a href="#">Designer</a></li>
+									<li><a href="#">Jeans</a></li>
+									<li><a href="#">Jewellery &amp; Watches</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="widget-info">
+							<div class="widget-title">By Price</div>
+							<div class="line"></div>
+							<div class="widget-price">
+								<ul>
+									<li><a href="#">0 - $1,700.00</a></li>
+									<li><a href="#">$20 - $2,800.00</a></li>
+									<li><a href="#">$50 - $2,900.00</a></li>
+									<li><a href="#">$75 - $3,990.00</a></li>
+									<li><a href="#">$100 - $4,600.00</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="widget-info">
+							<div class="widget-title">Color</div>
+							<div class="line"></div>
+							<div class="widget-price">
+								<select class="select_color">
+									<option selected="selected" value="red">Red</option>
+									<option value="blue">Blue</option>
+									<option value="green">Green</option>
+									<option value="yellow">yellow</option>
+								</select>
+							</div>
+						</div>
+						<div class="widget-info">
+							<div class="widget-title">Manufacturer</div>
+							<div class="line"></div>
+							<div class="widget-content">
+								<form>
+									<div><input name="vehicle" value="Bike" type="checkbox"><div class="brand_name">Adidas</div></div>
+									<div><input name="vehicle" value="Car" type="checkbox"><div class="brand_name">Nike</div></div>
+									<div><input name="vehicle" value="Bike" type="checkbox"><div class="brand_name">T-Shirt</div></div>
+									<div><input name="vehicle" value="Car" type="checkbox"><div class="brand_name">Puma</div></div> 
+									<div><input name="vehicle" value="Bike" type="checkbox"><div class="brand_name">Denim</div></div>
+									<div><input name="vehicle" value="Car" type="checkbox"><div class="brand_name">Dedeman</div></div> 
+									<div><input name="vehicle" value="Car" type="checkbox"><div class="brand_name">New wear</div></div>
+								</form>
+							</div>
+						</div>
+						<div class="widget-info">
+							<div class="widget-title">View History</div>
+							<div class="line"></div>
+							<div class="widget-content">
+								<div class="history-product-image">	
+									<a href="#"><img src="checkout_files/htstory.png" alt=""></a>
+								</div>
+								<div id="feature-post-content">
+									<div>
+										<button class="shop-now">Shop Now</button> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>				
+			</div>	
+			</div>
+			
+		</div> 
+{% endblock %}
+{% block footer %}{{parent()}}{% endblock %} 
+
+

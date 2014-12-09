@@ -1,0 +1,45 @@
+Promotion:
+    type: entity
+    table: promotion
+    indexes:
+        fk_promotion_produit1_idx:
+            columns:
+                - produit_idproduit
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        dateDeb:
+            type: date
+            nullable: true
+            comment: ''
+            column: date_deb
+        dateFin:
+            type: date
+            nullable: true
+            comment: ''
+            column: date_fin
+        prixPromo:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+            column: prix_promo
+    manyToOne:
+        produitproduit:
+            targetEntity: Produit
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                produit_idproduit:
+                    referencedColumnName: idproduit
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

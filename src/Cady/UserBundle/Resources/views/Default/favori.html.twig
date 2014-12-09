@@ -1,0 +1,104 @@
+{% extends 'CadyUserBundle::Default/layout.html.twig' %}
+{% block header %}{{parent()}}{% endblock %}
+{% block body %}
+    <div class="main_content">
+			<div class="container main">
+				<div class="checkout_area">
+					<h2 class="title-wrap">
+						Liste favorie
+					</h2>
+					<div class="line"></div>
+					
+						<div class="cart_area">
+							
+							<div class="cart_area_heading">
+								<div class="row">
+								<div class="span3 cart_remove">
+									<p>Supprimer</p>
+								</div>
+								<div class="span2 cart_image">
+									<p>Image</p>
+								</div>
+								<div class="span2 cart_product_name">
+									<p> Nom de produit</p>
+								</div>
+								<div class="span2 cart_quantity">
+									<p>Quantitée</p>
+								</div>
+								<div class="span3 cart_total_price">
+									<p>Prix total</p>
+								</div>
+								</div>
+							</div>
+							<div class="cart_area_list">
+								<div class="cart_area_content">
+								<div class="row">
+									<div class="span3 cart_remove">
+										<p><input name="product1" value="product1" type="checkbox"></p>
+									</div>
+									<div class="span2 cart_image">
+										<img alt="" src="wish_liste_files/1_002.png">
+									</div>
+									<div class="span2 cart_product_name">
+										<p>Mordern Dress</p>
+									</div>
+									<div class="span2 cart_quantity">
+										<p>
+											<select>
+												<option selected="selected" value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+											</select>
+										</p>
+									</div>
+									<div class="span3 cart_total_price">
+										<p>$500</p>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="cart_area_list">
+							<div class="cart_area_content">
+							<div class="row">
+								<div class="span3 cart_remove">
+									<p><input name="product1" value="product1" type="checkbox"></p>
+								</div>
+								<div class="span2 cart_image">
+									<img alt="" src="wish_liste_files/2_002.png">
+								</div>
+								<div class="span2 cart_product_name">
+									<p>Mordern Dress</p>
+								</div>
+								<div class="span2 cart_quantity">
+									<p>
+										<select>
+											<option selected="selected" value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+										</select>
+									</p>
+								</div>
+								<div class="span3 cart_total_price">
+									<p>$500</p>
+								</div>
+							</div>
+						</div>						
+						</div>						
+						</div>
+					</div>	
+			</div>
+		</div>
+{% endblock%}
+{% block footer %}{{parent()}}{% endblock %} 

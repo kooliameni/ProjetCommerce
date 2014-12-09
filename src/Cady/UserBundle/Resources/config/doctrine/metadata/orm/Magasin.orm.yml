@@ -1,0 +1,32 @@
+Magasin:
+    type: entity
+    table: magasin
+    id:
+        idmagasin:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nom:
+            type: string
+            nullable: true
+            length: 45
+            fixed: false
+            comment: ''
+        region:
+            type: string
+            nullable: true
+            length: 45
+            fixed: false
+            comment: ''
+        logo:
+            type: string
+            nullable: true
+            length: 500
+            fixed: false
+            comment: ''
+    lifecycleCallbacks: {  }

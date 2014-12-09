@@ -1,0 +1,45 @@
+Note:
+    type: entity
+    table: note
+    indexes:
+        fk_note_produit1_idx:
+            columns:
+                - produit_idproduit
+        fk_note_client1_idx:
+            columns:
+                - client_idclient
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        valeur:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+    manyToOne:
+        clientclient:
+            targetEntity: Client
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                client_idclient:
+                    referencedColumnName: idclient
+            orphanRemoval: false
+        produitproduit:
+            targetEntity: Produit
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                produit_idproduit:
+                    referencedColumnName: idproduit
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

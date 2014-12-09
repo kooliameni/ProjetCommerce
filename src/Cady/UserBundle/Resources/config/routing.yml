@@ -1,0 +1,33 @@
+cady_user_homepage:
+    path:     /hello
+    defaults: { _controller: CadyUserBundle:Default:index }
+
+    
+cady_user:
+    path:     /hello
+    defaults: {_controller: CadyUserBundle:Default:index}
+
+liste_favorie:
+    path:     /liste
+    defaults:  {_controller: CadyUserBundle:Default:favorite}
+
+panier:
+    path:    /panier
+    defaults:  {_controller: CadyUserBundle:Default:panier}
+
+commande:
+    path:    /commande
+    defaults:  {_controller: CadyUserBundle:Default:commande}
+
+connexion:
+    path:    /connexion
+    defaults:  {_controller:CadyUserBundle:Default:connexion}
+categorie:
+    path: /categorie/{id}
+    defaults:  {_controller:CadyUserBundle:Categorie:categori}
+categorieglob:
+    path: /categorie
+    defaults:  {_controller:CadyUserBundle:Default:index}
+    
+    
+    

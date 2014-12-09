@@ -1,0 +1,45 @@
+services:
+    sonata.admin.post:
+        class: Cady\UserBundle\Admin\PostAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Gestion Magasin", label: "Categorie" }
+        arguments:
+            - ~
+            - Cady\UserBundle\Entity\Categorie
+            - ~
+        calls:
+            - [ setTranslationDomain, [CadyUserBundle]]
+
+    sonata.admin.produit:
+        class: Cady\UserBundle\Admin\ProduitAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Gestion Magasin", label: "Produit" }
+        arguments:
+            - ~
+            - Cady\UserBundle\Entity\Produit
+            - ~
+        calls:
+            - [ setTranslationDomain, [CadyUserBundle]] 
+    
+    sonata.admin.promotion:
+        class: Cady\UserBundle\Admin\PromotionAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Gestion Magasin", label: "Promotion" }
+        arguments:
+            - ~
+            - Cady\UserBundle\Entity\Promotion
+            - ~
+        calls:
+            - [ setTranslationDomain, [CadyUserBundle]]            
+    sonata.admin.commande:
+        class: Cady\UserBundle\Admin\CommandeAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Commandes", label: "Commande" }
+        arguments:
+            - ~
+            - Cady\UserBundle\Entity\Commande
+            - ~
+        calls:
+            - [ setTranslationDomain, [CadyUserBundle]]   
+            
+   
