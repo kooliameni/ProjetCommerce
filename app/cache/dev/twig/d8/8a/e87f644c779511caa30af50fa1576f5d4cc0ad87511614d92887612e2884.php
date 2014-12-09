@@ -69,7 +69,10 @@ class __TwigTemplate_d88ae87f644c779511caa30af50fa1576f5d4cc0ad87511614d92887612
 \t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t<ul class=\"dropdown-menu\">
                                                                         
-                                                                                                                                                        
+                                                                                ";
+        // line 31
+        echo $this->env->getExtension('actions')->renderUri("CadyUserBundle:Default:index", array());
+        echo "                                                                        
 
                                                                             ";
         // line 33
@@ -170,6 +173,6 @@ class __TwigTemplate_d88ae87f644c779511caa30af50fa1576f5d4cc0ad87511614d92887612
 
     public function getDebugInfo()
     {
-        return array (  156 => 80,  150 => 77,  138 => 74,  134 => 73,  113 => 55,  92 => 36,  82 => 34,  76 => 33,  66 => 26,  60 => 23,  39 => 4,  36 => 3,  30 => 2,);
+        return array (  159 => 80,  153 => 77,  141 => 74,  137 => 73,  116 => 55,  95 => 36,  85 => 34,  79 => 33,  74 => 31,  66 => 26,  60 => 23,  39 => 4,  36 => 3,  30 => 2,);
     }
 }

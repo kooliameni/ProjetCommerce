@@ -28,7 +28,7 @@
 									</a>
 									<ul class="dropdown-menu">
                                                                         
-                                                                                                                                                        
+                                                                                {% render "CadyUserBundle:Default:index" %}                                                                        
 
                                                                             {% for categorie in categories %} 
 										<li><a href="{{path('categorie',{'id':categorie.idcategorie})}}">{{categorie.nom}}</a></li>

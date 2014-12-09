@@ -8,10 +8,9 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        $em=$this->container->get('doctrine')->getEntityManager();
-        $categories=$em->getRepository('CadyUserBundle:Categorie')->findAll();
+        
        
-        return $this->render('CadyUserBundle:Default:index.html.twig',array('categories'=>$categories));
+        return $this->render('CadyUserBundle:Default:index.html.twig');
     }
      public function favoriteAction()
     {

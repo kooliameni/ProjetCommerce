@@ -20,13 +20,13 @@ class __TwigTemplate_d6016fb9c71be314a0610c31164ddb9a89e76292b27b4b1ed4158c451f2
     {
         // line 1
         $this->displayBlock('header', $context, $blocks);
-        // line 98
+        // line 88
         echo "                        ";
         $this->displayBlock('body', $context, $blocks);
-        // line 99
+        // line 89
         echo "                        
 \t\t";
-        // line 100
+        // line 90
         $this->displayBlock('footer', $context, $blocks);
     }
 
@@ -110,41 +110,31 @@ class __TwigTemplate_d6016fb9c71be314a0610c31164ddb9a89e76292b27b4b1ed4158c451f2
 \t\t\t\t\t<div class=\"header_top\">
 \t\t\t\t\t\t<div class=\"currency_translator span5\">\t
 \t\t\t\t\t\t\t<div class=\"currency\">
-\t\t\t\t\t\t\t\tDevise:
-\t\t\t\t\t\t\t\t\t<select class=\"select_bg\">
-\t\t\t\t\t\t\t\t\t\t<option value=\"dollar\">DOLLAR</option>
-\t\t\t\t\t\t\t\t\t\t<option value=\"euro\">EURO</option>
-\t\t\t\t\t\t\t\t\t\t<option value=\"dinar\">DINAR TUN</option>
-\t\t\t
-\t\t\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t<ul class=\"translator\">
-\t\t\t\t\t\t\t\t<li class=\"en\"><a class=\"active\" href=\"#\">EN</a></li>
-\t\t\t\t\t\t\t\t<li class=\"en\"><a href=\"#\">ES</a></li>
-\t\t\t\t\t\t\t\t<li class=\"en\"><a href=\"#\">FR</a></li>
-\t\t\t\t\t\t\t</ul>\t\t\t\t
+\t\t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<div class=\"account_login span7\">
 \t\t\t\t\t\t
 \t\t\t\t\t\t\t<ul class=\"account_info\">
 \t\t\t\t\t\t\t\t<li><a href=\"#\"><img alt=\"\" src=\"";
-        // line 56
+        // line 46
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/my_account.png"), "html", null, true);
         echo "\"> MON COMPTE</a></li>
 \t\t\t\t\t\t\t\t<li><a href=\"wish_list.html\"><img alt=\"\" src=\"";
-        // line 57
+        // line 47
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/mywish_list.png"), "html", null, true);
         echo "\"> MA LISTE</a></li>
 \t\t\t\t\t\t\t\t<li><a href=\"cart.html\"><img alt=\"\" src=\"";
-        // line 58
+        // line 48
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/shopping_cart.png"), "html", null, true);
         echo "\"> MON PANIER</a></li>
 \t\t\t\t\t\t\t\t<li><a href=\"checkout.html\"><img alt=\"\" src=\"";
-        // line 59
+        // line 49
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/checkout.png"), "html", null, true);
         echo "\"> MES COMMANDES</a></li>
 \t\t\t\t\t\t\t\t<li><a href=\"log_in.html\"><img alt=\"\" src=\"";
-        // line 60
+        // line 50
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/log_out.png"), "html", null, true);
         echo "\">SE CONNECTER</a></li>
 \t\t\t\t\t\t\t</ul>
@@ -166,7 +156,7 @@ class __TwigTemplate_d6016fb9c71be314a0610c31164ddb9a89e76292b27b4b1ed4158c451f2
 \t\t\t\t\t\t<div class=\"cart_info span3\">
 \t\t\t\t\t\t\t<div class=\"cart_data\">MES COURSES - 0.00DT</div>
 \t\t\t\t\t\t\t<button class=\"cart_btn btn btn-navbar\" data-toggle=\"collapse\" data-target=\".item_cart_wrap\"><img alt=\"\" src=\"";
-        // line 79
+        // line 69
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/shopping_cart_btn_img.png"), "html", null, true);
         echo "\"></button>
 \t\t\t\t\t\t\t<div class=\"item_cart_content\">
@@ -189,16 +179,16 @@ class __TwigTemplate_d6016fb9c71be314a0610c31164ddb9a89e76292b27b4b1ed4158c451f2
 \t\t\t";
     }
 
-    // line 98
+    // line 88
     public function block_body($context, array $blocks = array())
     {
         echo " ";
     }
 
-    // line 100
+    // line 90
     public function block_footer($context, array $blocks = array())
     {
-        // line 101
+        // line 91
         echo "                    
 \t\t<div class=\"footer\">
 \t\t\t<div class=\"footer-top\">
@@ -274,23 +264,23 @@ class __TwigTemplate_d6016fb9c71be314a0610c31164ddb9a89e76292b27b4b1ed4158c451f2
 \t\t\t\t\t\t<div class=\"span4 footer-col\">
 \t\t\t\t\t\t\t<ul>
 \t\t\t\t\t\t\t\t<li><a href=\"#\"><img alt=\"\" src=\"";
-        // line 175
+        // line 165
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/payment-getway/1.png"), "html", null, true);
         echo "\"></a></li>
 \t\t\t\t\t\t\t\t<li><a href=\"#\"><img alt=\"\" src=\"";
-        // line 176
+        // line 166
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/payment-getway/2.png"), "html", null, true);
         echo "\"></a></li>
 \t\t\t\t\t\t\t\t<li><a href=\"#\"><img alt=\"\" src=\"";
-        // line 177
+        // line 167
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/payment-getway/3.png"), "html", null, true);
         echo "\"></a></li>
 \t\t\t\t\t\t\t\t<li><a href=\"#\"><img alt=\"\" src=\"";
-        // line 178
+        // line 168
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/payment-getway/4.png"), "html", null, true);
         echo "\"></a></li>
 \t\t\t\t\t\t\t\t<li><a href=\"#\"><img alt=\"\" src=\"";
-        // line 179
+        // line 169
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/payment-getway/5.png"), "html", null, true);
         echo "\"></a></li>
 \t\t\t\t\t\t\t</ul>
@@ -302,87 +292,87 @@ class __TwigTemplate_d6016fb9c71be314a0610c31164ddb9a89e76292b27b4b1ed4158c451f2
 \t<!-- Start JS Link -->
 \t\t<script src=\"js/js-engine.js\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 188
+        // line 178
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/jquery.min.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 189
+        // line 179
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/superfish.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 190
+        // line 180
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/modernizr.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 191
+        // line 181
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/jquery.bounceslider.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 192
+        // line 182
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/jquery.jcarousel.min.js"), "html", null, true);
         echo "\"> </script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 193
+        // line 183
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/responsiveslides.min.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 194
+        // line 184
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/jquery.bxslider.min.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 195
+        // line 185
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/jquery.bxslider.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 196
+        // line 186
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/jquery.mixitup.min.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 197
+        // line 187
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/jquery-ui.sortable.min.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 198
+        // line 188
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/jquery.ui.touch-punch.min.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 199
+        // line 189
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/jquery.mixitup.min.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 200
+        // line 190
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/mixitop-inline.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 201
+        // line 191
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/ga.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 202
+        // line 192
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/cloudflare.min.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 203
+        // line 193
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/jquery.form.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 204
+        // line 194
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/init_form.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 205
+        // line 195
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/jquery-ui.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 206
+        // line 196
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/jquery.jqzoom-core.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 207
+        // line 197
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/bootstrap.js"), "html", null, true);
         echo "\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 208
+        // line 198
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/js/custom.js"), "html", null, true);
         echo "\"></script>
 \t<!-- End JS Link -->\t\t
@@ -400,6 +390,6 @@ class __TwigTemplate_d6016fb9c71be314a0610c31164ddb9a89e76292b27b4b1ed4158c451f2
 
     public function getDebugInfo()
     {
-        return array (  386 => 208,  382 => 207,  378 => 206,  374 => 205,  370 => 204,  366 => 203,  362 => 202,  358 => 201,  354 => 200,  350 => 199,  346 => 198,  342 => 197,  338 => 196,  334 => 195,  330 => 194,  326 => 193,  322 => 192,  318 => 191,  314 => 190,  310 => 189,  306 => 188,  294 => 179,  290 => 178,  286 => 177,  282 => 176,  278 => 175,  202 => 101,  199 => 100,  193 => 98,  170 => 79,  148 => 60,  144 => 59,  140 => 58,  136 => 57,  132 => 56,  101 => 28,  97 => 27,  93 => 26,  89 => 25,  85 => 24,  81 => 23,  77 => 22,  73 => 21,  69 => 20,  65 => 19,  61 => 18,  57 => 17,  53 => 16,  37 => 2,  34 => 1,  30 => 100,  27 => 99,  24 => 98,  22 => 1,);
+        return array (  376 => 198,  372 => 197,  368 => 196,  364 => 195,  360 => 194,  356 => 193,  352 => 192,  348 => 191,  344 => 190,  340 => 189,  336 => 188,  332 => 187,  328 => 186,  324 => 185,  320 => 184,  316 => 183,  312 => 182,  308 => 181,  304 => 180,  300 => 179,  296 => 178,  284 => 169,  280 => 168,  276 => 167,  272 => 166,  268 => 165,  192 => 91,  189 => 90,  183 => 88,  160 => 69,  138 => 50,  134 => 49,  130 => 48,  126 => 47,  122 => 46,  101 => 28,  97 => 27,  93 => 26,  89 => 25,  85 => 24,  81 => 23,  77 => 22,  73 => 21,  69 => 20,  65 => 19,  61 => 18,  57 => 17,  53 => 16,  37 => 2,  34 => 1,  30 => 90,  27 => 89,  24 => 88,  22 => 1,);
     }
 }

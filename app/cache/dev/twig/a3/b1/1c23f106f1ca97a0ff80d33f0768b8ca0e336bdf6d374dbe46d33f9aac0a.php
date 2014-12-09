@@ -67,14 +67,18 @@ class __TwigTemplate_a3b11c23f106f1ca97a0ff80d33f0768b8ca0e336bdf6d374dbe46d33f9
 \t\t\t\t\t\t\t\t\t\tCatégorie
 \t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t<ul class=\"dropdown-menu\">
-                                                                            ";
+                                                                                  ";
         // line 29
+        echo $this->env->getExtension('actions')->renderUri("CadyUserBundle:Categorie:categoriListe", array());
+        echo " 
+                                                                            ";
+        // line 30
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable($this->getContext($context, "categories"));
         foreach ($context['_seq'] as $context["_key"] => $context["categorie"]) {
             echo " 
 \t\t\t\t\t\t\t\t\t\t<li><a href=\"";
-            // line 30
+            // line 31
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("categorie", array("id" => $this->getAttribute($context["categorie"], "idcategorie", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["categorie"], "nom", array()), "html", null, true);
@@ -84,7 +88,7 @@ class __TwigTemplate_a3b11c23f106f1ca97a0ff80d33f0768b8ca0e336bdf6d374dbe46d33f9
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['categorie'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 32
+        // line 33
         echo "\t\t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t\t\t</li>
@@ -105,7 +109,7 @@ class __TwigTemplate_a3b11c23f106f1ca97a0ff80d33f0768b8ca0e336bdf6d374dbe46d33f9
 \t\t\t\t\t\t\t\t<input type=\"search\" name=\"search\" placeholder=\"search\">
 \t\t\t\t\t\t\t\t\t<button class=\"search_btn\">
 \t\t\t\t\t\t\t\t\t\t<img alt=\"\" src=\"";
-        // line 51
+        // line 52
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/icon_search.png"), "html", null, true);
         echo "\">
 \t\t\t\t\t\t\t\t\t</button>
@@ -130,21 +134,21 @@ class __TwigTemplate_a3b11c23f106f1ca97a0ff80d33f0768b8ca0e336bdf6d374dbe46d33f9
 \t\t\t\t\t\t\t\t<li>
 \t\t\t\t\t\t\t\t\t<p class=\"bounce-desc right-side\"><span>Meilleurs qualitée de Légumes et Fruits <br/> Hmmmmm C'est fraiche!!!</span></p>
 \t\t\t\t\t\t\t\t\t<img src=\"";
-        // line 73
+        // line 74
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/slide1.png"), "html", null, true);
         echo "\" alt=\"image 1\"/>
 \t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t\t<li>
 \t\t\t\t\t\t\t\t\t<p class=\"bounce-desc left-side\"><span>Votres Petit Déjeuner<br/> est ici </span></p>
 \t\t\t\t\t\t\t\t\t<img src=\"";
-        // line 77
+        // line 78
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/slide2.png"), "html", null, true);
         echo "\" alt=\"image 2\"/>
 \t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t\t<li>
 \t\t\t\t\t\t\t\t\t<p class=\"bounce-desc left-side\"><span>Meilleues prix<br/> Profitez!!</span></p>
 \t\t\t\t\t\t\t\t\t<img src=\"";
-        // line 81
+        // line 82
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/slide3.png"), "html", null, true);
         echo "\" alt=\"image 3\"/>
 \t\t\t\t\t\t\t\t</li>
@@ -161,7 +165,7 @@ class __TwigTemplate_a3b11c23f106f1ca97a0ff80d33f0768b8ca0e336bdf6d374dbe46d33f9
 \t\t\t\t\t<div class=\"span4 feature-content\">
 \t\t\t\t\t\t<div id=\"feature-image_1\">
 \t\t\t\t\t\t\t<img alt=\"\" src=\"";
-        // line 95
+        // line 96
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("imagessweater.png"), "html", null, true);
         echo "\">
 \t\t\t\t\t\t</div>
@@ -220,7 +224,7 @@ class __TwigTemplate_a3b11c23f106f1ca97a0ff80d33f0768b8ca0e336bdf6d374dbe46d33f9
 \t\t\t\t\t\t\t<div class=\"new-product-image\">
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t<a href=\"#\"><img src=\"";
-        // line 151
+        // line 152
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/caduuser/images/01.jpg"), "html", null, true);
         echo "\" alt=\"\" /></a>
 \t\t\t\t\t\t\t</div>\t
@@ -231,11 +235,11 @@ class __TwigTemplate_a3b11c23f106f1ca97a0ff80d33f0768b8ca0e336bdf6d374dbe46d33f9
 \t\t\t\t\t\t\t\t\t\t<div class=\"newE-product-cart_like\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"new-product-cart_like\">
 \t\t\t\t\t\t\t\t\t\t\t\t<div class=\"new-product-cart\"><a href=\"#\"><img alt=\"\" src=\"";
-        // line 159
+        // line 160
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/new-product/shoping-info/cart-image.png"), "html", null, true);
         echo "\"></a></div>
 \t\t\t\t\t\t\t\t\t\t\t\t<div class=\"new-product-like\"><a href=\"#\"><img alt=\"\" src=\"";
-        // line 160
+        // line 161
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/new-product/shoping-info/like-img.png"), "html", null, true);
         echo "\"></a></div>
 \t\t\t\t\t\t\t\t\t\t\t</div>
@@ -265,11 +269,11 @@ class __TwigTemplate_a3b11c23f106f1ca97a0ff80d33f0768b8ca0e336bdf6d374dbe46d33f9
 \t\t\t\t\t\t\t\t\t\t<div class=\"newE-product-cart_like\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"new-product-cart_like\">
 \t\t\t\t\t\t\t\t\t\t\t\t<div class=\"new-product-cart\"><a href=\"#\"><img alt=\"\" src=\"";
-        // line 187
+        // line 188
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/cart-image.png"), "html", null, true);
         echo "\"></a></div>
 \t\t\t\t\t\t\t\t\t\t\t\t<div class=\"new-product-like\"><a href=\"#\"><img alt=\"\" src=\"";
-        // line 188
+        // line 189
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/like-img.png"), "html", null, true);
         echo "\"></a></div>
 \t\t\t\t\t\t\t\t\t\t\t</div>
@@ -298,11 +302,11 @@ class __TwigTemplate_a3b11c23f106f1ca97a0ff80d33f0768b8ca0e336bdf6d374dbe46d33f9
 \t\t\t\t\t\t\t\t\t\t<div class=\"newE-product-cart_like\">
 \t\t\t\t\t\t\t\t\t\t\t<div class=\"new-product-cart_like\">
 \t\t\t\t\t\t\t\t\t\t\t\t<div class=\"new-product-cart\"><a href=\"#\"><img alt=\"\" src=\"";
-        // line 214
+        // line 215
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/cart-image.png"), "html", null, true);
         echo "\"></a></div>
 \t\t\t\t\t\t\t\t\t\t\t\t<div class=\"new-product-like\"><a href=\"#\"><img alt=\"\" src=\"";
-        // line 215
+        // line 216
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/cadyuser/images/like-img.png"), "html", null, true);
         echo "\"></a></div>
 \t\t\t\t\t\t\t\t\t\t\t</div>
@@ -808,7 +812,7 @@ class __TwigTemplate_a3b11c23f106f1ca97a0ff80d33f0768b8ca0e336bdf6d374dbe46d33f9
                                                                         ";
     }
 
-    // line 719
+    // line 720
     public function block_footer($context, array $blocks = array())
     {
         $this->displayParentBlock("footer", $context, $blocks);
@@ -826,6 +830,6 @@ class __TwigTemplate_a3b11c23f106f1ca97a0ff80d33f0768b8ca0e336bdf6d374dbe46d33f9
 
     public function getDebugInfo()
     {
-        return array (  812 => 719,  306 => 215,  302 => 214,  273 => 188,  269 => 187,  239 => 160,  235 => 159,  224 => 151,  165 => 95,  148 => 81,  141 => 77,  134 => 73,  109 => 51,  88 => 32,  78 => 30,  72 => 29,  65 => 25,  59 => 22,  39 => 4,  36 => 3,  30 => 2,);
+        return array (  816 => 720,  310 => 216,  306 => 215,  277 => 189,  273 => 188,  243 => 161,  239 => 160,  228 => 152,  169 => 96,  152 => 82,  145 => 78,  138 => 74,  113 => 52,  92 => 33,  82 => 31,  76 => 30,  72 => 29,  65 => 25,  59 => 22,  39 => 4,  36 => 3,  30 => 2,);
     }
 }

@@ -26,6 +26,7 @@
 										Catégorie
 									</a>
 									<ul class="dropdown-menu">
+                                                                                  {% render "CadyUserBundle:Categorie:categoriListe" %} 
                                                                             {% for categorie in categories %} 
 										<li><a href="{{path('categorie',{'id':categorie.idcategorie})}}">{{categorie.nom}}</a></li>
                                                                                 {% endfor%}

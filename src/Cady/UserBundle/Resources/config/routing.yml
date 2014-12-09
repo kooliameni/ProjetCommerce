@@ -28,6 +28,9 @@ categorie:
 categorieglob:
     path: /categorie
     defaults:  {_controller:CadyUserBundle:Default:index}
+categoriListe:
+    path: /hello
+    defaults: {_controller:CadyUserBundle:Categorie:categoriListe}
     
     
     

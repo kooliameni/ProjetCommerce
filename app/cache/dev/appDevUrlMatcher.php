@@ -162,7 +162,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             if (0 === strpos($pathinfo, '/categorie')) {
                 // categorie
                 if (preg_match('#^/categorie/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'categorie')), array (  '_controller' => 'CadyUserBundle:Categorie:categori',));
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'categorie')), array (  '_controller' => 'Cady\\UserBundle\\Controller\\CategorieController::categoriAction',));
                 }
 
                 // categorieglob
@@ -172,6 +172,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
             }
 
+        }
+
+        // categoriListe
+        if ($pathinfo === '/hello') {
+            return array (  '_controller' => 'Cady\\UserBundle\\Controller\\CategorieController::categoriListeAction',  '_route' => 'categoriListe',);
         }
 
         if (0 === strpos($pathinfo, '/log')) {
